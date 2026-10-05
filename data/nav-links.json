@@ -1,0 +1,30 @@
+[
+  {
+    "id": "about",
+    "label": "About Us"
+  },
+  {
+    "id": "tnea",
+    "label": "TNEA Cut Off"
+  },
+  {
+    "id": "entrance",
+    "label": "Entrance 2027"
+  },
+  {
+    "id": "scholarships",
+    "label": "Scholarships"
+  },
+  {
+    "id": "quiz",
+    "label": "What Course?"
+  },
+  {
+    "id": "predictor",
+    "label": "College Predictor"
+  },
+  {
+    "id": "counselling",
+    "label": "Counselling"
+  }
+]

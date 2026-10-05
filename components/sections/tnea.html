@@ -1,0 +1,194 @@
+<!-- TNEA Section -->
+<div class="section" id="tnea-section">
+
+  <!-- TNEA Intro Content -->
+  <div class="tnea-intro">
+    <div class="tnea-breadcrumb">
+      Navigated to tnea • 1791190198604
+    </div>
+
+    <div class="tnea-years">
+      ✦ TNEA 2024 • 2025 • 2026
+    </div>
+
+    <h2>TNEA Closing Cut Off 2026 | 2025 | 2024</h2>
+
+    <p>
+      Easy to understand for 12th students and parents •
+      Check community-wise cut off, compare colleges, enter your cut off to see chances.
+    </p>
+
+    <div class="tnea-tamil">
+      உங்கள் கட்-ஆப் மதிப்பெண்ணை உள்ளிட்டு வாய்ப்புகளை தெரிந்துகொள்ளுங்கள்
+    </div>
+  </div>
+
+
+  <!-- Main TNEA Cutoff Content -->
+  <div class="tnea-main-card">
+
+    <h3 class="section-title">TNEA Cut Off 2025 – College Wise</h3>
+
+    <p class="section-sub">
+      Filter by course, category (OC/BC/MBC/SC) and your cutoff to see chance.
+      Data based on previous year opening.
+      <span style="font-size:11px;color:#94a3b8">
+        Data Source: data/tnea-cutoff.json
+      </span>
+    </p>
+
+    <div class="filters">
+      <select id="tneaCourse">
+        <option value="All">All Courses</option>
+        <option value="CSE">CSE</option>
+        <option value="ECE">ECE</option>
+        <option value="Mech">Mech</option>
+        <option value="AI">AI & DS</option>
+      </select>
+
+      <input
+        id="tneaSearch"
+        type="text"
+        placeholder="Search college e.g. PSG, CIT..."
+      />
+
+      <select id="tneaCategory">
+        <option>OC</option>
+        <option>BC</option>
+        <option>BCM</option>
+        <option>MBC</option>
+        <option>SC</option>
+        <option>SCA</option>
+        <option>ST</option>
+      </select>
+
+      <input
+        id="tneaCutoff"
+        type="number"
+        step="0.5"
+        min="0"
+        max="200"
+        value="189.5"
+        placeholder="Your Cutoff"
+      />
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>College</th>
+            <th>Course</th>
+            <th>District</th>
+            <th id="tneaCatHead">OC Cutoff</th>
+            <th>Your Chance</th>
+          </tr>
+        </thead>
+
+        <tbody id="tneaBody">
+          <tr>
+            <td colspan="5" style="text-align:center;padding:20px">
+              Loading from JSON...
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
+<style>
+/* TNEA Intro Card */
+.tnea-intro {
+  background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 55%, #eef2ff 100%);
+  border: 1px solid #dbeafe;
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 18px;
+}
+
+.tnea-breadcrumb {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 12px;
+}
+
+.tnea-years {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #2563eb;
+  background: #dbeafe;
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.tnea-intro h2 {
+  margin: 4px 0 8px;
+  color: #0f172a;
+  font-size: 25px;
+  line-height: 1.25;
+}
+
+.tnea-intro p {
+  margin: 0;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.tnea-tamil {
+  margin-top: 15px;
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.75);
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* Main TNEA Card */
+.tnea-main-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+}
+
+.tnea-main-card .section-title {
+  margin-top: 0;
+}
+
+.tnea-main-card .section-sub {
+  margin-bottom: 18px;
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .tnea-intro,
+  .tnea-main-card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .tnea-intro h2 {
+    font-size: 21px;
+  }
+
+  .tnea-intro p {
+    font-size: 13px;
+  }
+
+  .tnea-tamil {
+    font-size: 13px;
+  }
+}
+
+
+</style>

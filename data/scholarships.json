@@ -1,0 +1,226 @@
+[
+  {
+    "title": "Tamil Nadu Govt First Graduate Scholarship",
+    "amount": "₹25,000 / Year",
+    "elig": "First Graduate in Family, TNEA/TNGASA",
+    "type": "State",
+    "website": "https://www.tn.gov.in/scholarship",
+    "category": "Engineering & Arts"
+  },
+  {
+    "title": "7.5% Govt School Quota - Fee Waiver",
+    "amount": "Full Tuition Fee",
+    "elig": "Studied 6th-12th in Govt School",
+    "type": "State",
+    "website": "https://www.tneaonline.org",
+    "category": "MBBS/BDS & Engineering"
+  },
+  {
+    "title": "BC/MBC Scholarship - Tamil Nadu",
+    "amount": "₹7,000 - ₹12,000 / Year",
+    "elig": "BC/MBC, Income < 2L",
+    "type": "State",
+    "website": "https://www.bcmbcmw.tn.gov.in",
+    "category": "All Courses"
+  },
+  {
+    "title": "SC/ST Post Matric Scholarship",
+    "amount": "Full Fee + Maintenance",
+    "elig": "SC/ST, Income < 2.5L",
+    "type": "State",
+    "website": "https://www.tn.gov.in/adi-dravidar",
+    "category": "All Courses"
+  },
+  {
+    "title": "PMSS - PM Scholarship Scheme",
+    "amount": "₹30,000 / Year",
+    "elig": "Wards of Ex-Servicemen",
+    "type": "Central",
+    "website": "https://scholarships.gov.in",
+    "category": "Professional"
+  },
+  {
+    "title": "National Scholarship Portal - Merit Cum Means",
+    "amount": "₹20,000 / Year",
+    "elig": "Minority, 50%+ marks",
+    "type": "Central",
+    "website": "https://scholarships.gov.in",
+    "category": "Professional & Technical"
+  },
+  {
+    "title": "INSPIRE Scholarship - DST",
+    "amount": "₹80,000 / Year",
+    "elig": "Top 1% in 12th, BSc Natural Science",
+    "type": "Central",
+    "website": "https://online-inspire.gov.in",
+    "category": "BSc Science"
+  },
+  {
+    "title": "AICTE Pragati - Girls Scholarship",
+    "amount": "₹50,000 / Year",
+    "elig": "Girl Student in AICTE Approved College",
+    "type": "Central",
+    "website": "https://www.aicte-india.org",
+    "category": "Engineering/Diploma"
+  },
+  {
+    "title": "AICTE Saksham - Differently Abled",
+    "amount": "₹50,000 / Year",
+    "elig": "Differently Abled >40%",
+    "type": "Central",
+    "website": "https://www.aicte-india.org",
+    "category": "Technical"
+  },
+  {
+    "title": "ONGC Scholarship",
+    "amount": "₹48,000 / Year",
+    "elig": "SC/ST/OBC/General EWS, Engg/MBBS/MBA",
+    "type": "Company",
+    "website": "https://ongcindia.com",
+    "category": "Engg/Medical"
+  },
+  {
+    "title": "Sitaram Jindal Foundation",
+    "amount": "₹10,000 - ₹35,000",
+    "elig": "Merit + Income Criteria",
+    "type": "Trust",
+    "website": "https://www.sitaramjindalfoundation.org",
+    "category": "All Courses"
+  },
+  {
+    "title": "Tata Trusts Scholarship",
+    "amount": "Variable - High Value",
+    "elig": "Merit + Need Based",
+    "type": "Trust",
+    "website": "https://www.tatatrusts.org",
+    "category": "All Professional"
+  },
+  {
+    "title": "Reliance Foundation Scholarship",
+    "amount": "₹2 Lakh - ₹6 Lakh",
+    "elig": "Merit, UG & PG",
+    "type": "Company",
+    "website": "https://www.scholarships.reliancefoundation.org",
+    "category": "UG Excellence"
+  },
+  {
+    "title": "L'Oréal India For Young Women in Science",
+    "amount": "₹2.5 Lakh",
+    "elig": "Girl in Science Stream",
+    "type": "Company",
+    "website": "https://www.loreal.com",
+    "category": "Science Girls"
+  },
+  {
+    "title": "HDFC Badhte Kadam Scholarship",
+    "amount": "₹75,000",
+    "elig": "Class 11-12 & UG, Financial Need",
+    "type": "Company",
+    "website": "https://www.hdfcbank.com",
+    "category": "All"
+  },
+  {
+    "title": "Keep India Smiling - Colgate",
+    "amount": "₹30,000 / Year",
+    "elig": "Merit + Family Income <5L",
+    "type": "Company",
+    "website": "https://www.colgate.com",
+    "category": "All Professional"
+  },
+  {
+    "title": "FFE - Foundation For Excellence",
+    "amount": "Tuition + Living",
+    "elig": "Engg/Medical, Family Income <2.5L",
+    "type": "Trust",
+    "website": "https://ffe.org",
+    "category": "Engg/MBBS"
+  },
+  {
+    "title": "Swami Dayanand Scholarship",
+    "amount": "₹50,000",
+    "elig": "Engineering/Architecture/Medical",
+    "type": "Trust",
+    "website": "https://www.swamidayanand.org",
+    "category": "Professional"
+  },
+  {
+    "title": "LIC Golden Jubilee Scholarship",
+    "amount": "₹20,000 / Year",
+    "elig": "12th 60%+, Income <2L",
+    "type": "Company",
+    "website": "https://licindia.in",
+    "category": "All"
+  },
+  {
+    "title": "Santoor Women's Scholarship",
+    "amount": "₹24,000 / Year",
+    "elig": "Girl Student - Karnataka, AP, TS, TN",
+    "type": "Trust",
+    "website": "https://www.santoorscholarship.com",
+    "category": "Women Empowerment"
+  },
+  {
+    "title": "G.P. Birla Scholarship",
+    "amount": "₹50,000 / Year",
+    "elig": "12th 80%+ from WB, Financial Need",
+    "type": "Trust",
+    "website": "https://www.gpbirlaedufoundation.com",
+    "category": "All"
+  },
+  {
+    "title": "Legrand Scholarship",
+    "amount": "₹60,000 / Year",
+    "elig": "Girl in BE/BTech/BArch",
+    "type": "Company",
+    "website": "https://legrand.co.in",
+    "category": "Engineering Girls"
+  },
+  {
+    "title": "Infosys Foundation - STEM Stars",
+    "amount": "₹1 Lakh / Year",
+    "elig": "Girl - Engineering/Medical",
+    "type": "Company",
+    "website": "https://www.infosys.com",
+    "category": "STEM"
+  },
+  {
+    "title": "North South Foundation Scholarship",
+    "amount": "$1000 - Tuition",
+    "elig": "Merit + Financial Need - Engg/Med",
+    "type": "Trust",
+    "website": "https://www.northsouth.org",
+    "category": "Engg/Med"
+  },
+  {
+    "title": "Merit Cum Means - Minority (TN)",
+    "amount": "₹30,000 / Year",
+    "elig": "Minority, Income <2.5L",
+    "type": "State",
+    "website": "https://scholarships.gov.in",
+    "category": "Professional"
+  },
+  {
+    "title": "Post Matric Scholarship - OBC",
+    "amount": "Full Fee Reimbursement",
+    "elig": "OBC, Income <1.5L",
+    "type": "Central",
+    "website": "https://scholarships.gov.in",
+    "category": "All"
+  },
+  {
+    "title": "Kishore Vaigyanik Protsahan Yojana",
+    "amount": "₹80,000 + Contingency",
+    "elig": "Science Research Aspirants",
+    "type": "Central",
+    "website": "https://kvpy.iisc.ac.in",
+    "category": "Science Research"
+  },
+  {
+    "title": "Siemens Scholarship Program",
+    "amount": "Full Tuition + Allowance",
+    "elig": "Govt College Engg First Year",
+    "type": "Company",
+    "website": "https://www.siemens.co.in",
+    "category": "Engineering"
+  }
+]

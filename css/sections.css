@@ -1,0 +1,68 @@
+/* Sections CSS */
+.hero-section .hero-grid{display:grid;gap:24px}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.2fr .8fr}}
+.badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:#fff7ed;color:#ff7a00;border:1px solid #ffedd5;
+  padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;
+}
+.hero-content h2{
+  font-size:32px;line-height:1.1;font-weight:900;
+  letter-spacing:-0.02em;margin:12px 0;color:#1a3a5f;
+}
+@media(min-width:768px){.hero-content h2{font-size:42px}}
+.highlight-orange{color:#ff7a00}
+.hero-desc{color:#475569;line-height:1.6;font-size:15px}
+.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:20px}
+.stat-card{background:#f7f8fb;border:1px solid #eef2f7;border-radius:16px;padding:16px}
+.stat-card b{font-size:22px;color:#1a3a5f;display:block}
+.stat-card span{font-size:12px;color:#64748b}
+.hero-buttons{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.hero-side{display:grid;gap:16px}
+.contact-card-dark{
+  padding:18px;border-radius:16px;
+  background:linear-gradient(135deg,#1a3a5f,#233e62);color:white;
+}
+.contact-card-dark h3{margin:0 0 10px;color:white}
+.office-block{margin:12px 0;font-size:13px}
+.office-block span{opacity:.8;font-size:13px}
+.call-box{margin-top:14px;background:rgba(255,255,255,.12);padding:12px;border-radius:12px}
+.call-box a{color:#fde68a;font-weight:800;text-decoration:none}
+.doc-section h4{margin:0 0 10px;color:#1a3a5f;font-size:14px;font-weight:800}
+.doc-section ul{margin:0;padding-left:18px;font-size:13px;line-height:1.8;color:#475569}
+.step-box{
+  margin-top:12px;font-size:12px;background:#fff7ed;
+  border:1px solid #ffedd5;padding:10px;border-radius:10px;color:#9a3412;
+}
+
+/* Quiz */
+.quiz-progress{height:8px;background:#f1f5f9;border-radius:999px;overflow:hidden;margin:12px 0}
+.quiz-progress div{height:100%;background:linear-gradient(90deg,#ff7a00,#d4af37);transition:.3s}
+.quiz-status{font-size:12px;color:#64748b;margin-bottom:12px}
+.q-card{padding:18px;border:1px solid #eef2f7;border-radius:16px;margin-bottom:12px;background:#fcfdff}
+.q-card h4{margin:0 0 12px;font-size:15px;font-weight:700;color:#1a3a5f}
+.options{display:grid;gap:8px}
+.opt{
+  padding:10px 14px;border-radius:12px;border:1px solid #e2e8f0;
+  background:white;cursor:pointer;font-size:13.5px;text-align:left;transition:.15s;
+}
+.opt:hover{border-color:#ff7a00;background:#fff7ed}
+.opt.selected{background:#1a3a5f;color:white;border-color:#1a3a5f}
+.result{
+  display:flex;align-items:center;gap:12px;
+  padding:12px;border-radius:12px;border:1px solid #eef2f7;margin-bottom:8px;background:white;
+}
+.result .bar{flex:1;height:8px;background:#f1f5f9;border-radius:999px;overflow:hidden}
+.result .bar div{height:100%;background:#1a3a5f}
+
+/* Contact Grid */
+.contact-grid{display:grid;gap:16px}
+@media(min-width:800px){.contact-grid{grid-template-columns:1fr 1fr}}
+.contact-links{margin-top:14px}
+.contact-links a{color:#fde68a;font-weight:800;text-decoration:none}
+.office-card{padding:18px;border-radius:16px;background:white;border:1px solid #eef2f7}
+.office-card h4{margin:0 0 10px;color:#1a3a5f}
+.office-card p{font-size:13px;margin:6px 0}
+.hours-box{margin-top:16px;padding:12px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0}
+.hours-box b{font-size:13px}
+.hours-box span{font-size:12px;color:#64748b}

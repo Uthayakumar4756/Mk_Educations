@@ -1,0 +1,97 @@
+/* Main Style CSS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+  --navy:#1a3a5f;
+  --navy-light:#233e62;
+  --orange:#ff7a00;
+  --orange-2:#ff8c00;
+  --gold:#d4af37;
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --border:#eef2f7;
+  --text:#1e293b;
+  --muted:#64748b;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:'Inter',system-ui,sans-serif;
+  background:var(--bg);color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit}
+button{font-family:inherit}
+.main{
+  max-width:1320px;margin:auto;
+  padding:24px 16px 80px;
+  min-height:60vh;
+}
+.section{
+  background:#1a3a5f;border:1px solid var(--border);
+  border-radius:20px;padding:24px;
+  box-shadow:0 8px 30px rgba(0,0,0,.04);
+  margin-bottom:24px;
+}
+.section-title{font-size:22px;font-weight:800;color:var(--navy);margin:0 0 4px}
+.section-sub{color:var(--muted);font-size:14px;margin:0 0 18px;line-height:1.5}
+
+/* Filters */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 16px}
+.filters input,.filters select{
+  padding:10px 14px;border:1px solid #e2e8f0;
+  border-radius:999px;font-size:13px;background:white;outline:none;min-width:160px;
+}
+.filters input:focus,.filters select:focus{border-color:var(--orange);box-shadow:0 0 0 3px rgba(255,122,0,.15)}
+
+/* Tables */
+.table-wrap{overflow:auto;border-radius:12px;border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:720px}
+th{
+  background:#f8fafc;text-align:left;padding:12px 10px;font-weight:700;
+  color:var(--navy);font-size:12px;text-transform:uppercase;letter-spacing:.04em;
+  border-bottom:1px solid var(--border);position:sticky;top:0;
+}
+td{padding:10px;border-bottom:1px solid #f1f5f9}
+tr:hover td{background:#f8fafc}
+
+/* Chance Badges */
+.chance{display:inline-flex;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:700;border:1px solid}
+.chance-high{background:#dcfce7;color:#15803d;border-color:#bbf7d0}
+.chance-medium{background:#fef9c3;color:#a16207;border-color:#fde68a}
+.chance-low{background:#ffedd5;color:#c2410c;border-color:#fed7aa}
+.chance-no{background:#fee2e2;color:#b91c1c;border-color:#fecaca}
+
+/* Cards Grid - Scholarships */
+.cards-grid{display:grid;gap:14px}
+@media(min-width:768px){.cards-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.cards-grid{grid-template-columns:repeat(3,1fr)}}
+.card{
+  border:1px solid var(--border);border-radius:16px;padding:16px;
+  background:white;transition:.2s;
+}
+.card:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(0,0,0,.06)}
+.card h4{margin:0 0 6px;font-size:15px;color:var(--navy);font-weight:800}
+.card .meta{font-size:12px;color:var(--muted);margin:4px 0}
+.card .amount{font-weight:800;color:var(--orange);font-size:13px;margin:6px 0}
+.tag{display:inline-block;font-size:10px;font-weight:700;padding:3px 8px;border-radius:999px;background:#f1f5f9;color:#475569;border:1px solid #e2e8f0}
+.tag.state{background:#dbeafe;color:#1e40af;border-color:#bfdbfe}
+.tag.central{background:#fef9c3;color:#854d0e;border-color:#fde68a}
+.tag.company{background:#dcfce7;color:#166534;border-color:#bbf7d0}
+
+/* Buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 18px;border-radius:999px;font-weight:700;font-size:13.5px;border:0;cursor:pointer;transition:.2s;text-decoration:none;
+}
+.btn-primary{background:var(--navy);color:white}
+.btn-primary:hover{background:#112a45}
+.btn-orange{background:var(--orange);color:white}
+.btn-orange:hover{background:#e56e00}
+.btn-ghost{background:#f1f5f9;color:var(--navy)}
+.btn-ghost:hover{background:#e2e8f0}
+.btn-wa-small{display:inline-flex;background:#25D366;padding:8px 14px;border-radius:999px;color:white;font-weight:700;font-size:13px;text-decoration:none;margin-top:8px}
+.btn-wa-green{display:inline-flex;background:#25D366;padding:10px 16px;border-radius:999px;color:white;font-weight:700;text-decoration:none;margin-top:6px}
+.hidden{display:none !important}
+.info-text{font-size:12px;color:#64748b;margin-bottom:10px}
+.link-buttons{display:flex;flex-wrap:wrap;gap:8px}

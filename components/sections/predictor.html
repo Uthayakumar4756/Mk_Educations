@@ -1,0 +1,34 @@
+<!-- College Predictor Section -->
+<div class="section" id="predictor-section">
+  <h3 class="section-title">TNEA College Predictor 2025</h3>
+  <p class="section-sub">Enter your cutoff, category, course & district – Get predicted colleges with High/Medium/Low chance. <span style="font-size:11px;color:#94a3b8">Data Source: data/tnea-cutoff.json</span></p>
+  
+  <div class="filters">
+    <input id="predCut" type="number" step="0.5" value="192" placeholder="Cutoff e.g. 192" />
+    <select id="predCat">
+      <option>OC</option><option>BC</option><option>BCM</option><option>MBC</option><option>SC</option><option>SCA</option><option>ST</option>
+    </select>
+    <select id="predCourse">
+      <option value="All">All Courses</option>
+      <option value="CSE">CSE</option>
+      <option value="ECE">ECE</option>
+      <option value="Mech">Mech</option>
+      <option value="AI">AI & DS</option>
+    </select>
+    <select id="predDist">
+      <option value="All">All Districts</option>
+      <option>Chennai</option><option>Coimbatore</option><option>Madurai</option><option>Erode</option>
+    </select>
+  </div>
+
+  <div class="info-text" id="predInfo"></div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>College</th><th>Course</th><th>Your Cutoff vs Required</th><th>Chance</th><th>Diff</th></tr>
+      </thead>
+      <tbody id="predBody"></tbody>
+    </table>
+  </div>
+</div>

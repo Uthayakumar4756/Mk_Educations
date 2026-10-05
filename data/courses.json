@@ -1,0 +1,162 @@
+[
+  {
+    "course": "B.E Computer Science",
+    "tags": [
+      "Maths, Physics",
+      "Building machines / Software",
+      "Logical Problem Solving",
+      "Office / Lab / Site",
+      "Build Technology & Infra",
+      "Coding, Robotics, Maths Puzzles",
+      "High Salary + Stable Job",
+      "Machines & Computers",
+      "Maths + Computer/Bio",
+      "Engineer / IT Professional"
+    ],
+    "icon": "💻"
+  },
+  {
+    "course": "MBBS / BDS",
+    "tags": [
+      "Biology, Chemistry",
+      "Helping people get healthy",
+      "Memorizing & Caring",
+      "Hospital / Clinic / Lab",
+      "Save Lives & Health",
+      "Biology videos, First Aid",
+      "Respect + Service Mind",
+      "People & Patients",
+      "Pure Biology / Bio-Maths",
+      "Doctor / Scientist"
+    ],
+    "icon": "🩺"
+  },
+  {
+    "course": "B.Arch / Design",
+    "tags": [
+      "Maths, Physics",
+      "Creative design & Drawing",
+      "Creativity & Visualization",
+      "Studio / Freelance",
+      "Design Beautiful Things",
+      "Sketching, Photoshop, Photos",
+      "Creative Freedom",
+      "Designs & Visuals",
+      "Any Group with Creativity",
+      "Architect / Designer"
+    ],
+    "icon": "🏛️"
+  },
+  {
+    "course": "B.Com / BBA / CA",
+    "tags": [
+      "Commerce, Accounts",
+      "Business & Managing Money",
+      "Communication & Leadership",
+      "Office / Market / Startup",
+      "Grow Economy & Jobs",
+      "Debate, Money, Trading",
+      "Business Growth + Wealth",
+      "Money & People",
+      "Commerce / Computer Commerce",
+      "Entrepreneur / CA / Manager"
+    ],
+    "icon": "📈"
+  },
+  {
+    "course": "B.Sc Agriculture / Research",
+    "tags": [
+      "Biology, Chemistry",
+      "Research & Discovery",
+      "Analysis & Experiments",
+      "Research Lab / Field",
+      "Discover New Knowledge",
+      "Science Projects, Reading",
+      "Deep Knowledge + PhD Path",
+      "Data & Experiments",
+      "Science with Curiosity",
+      "Professor / Researcher"
+    ],
+    "icon": "🌱"
+  },
+  {
+    "course": "B.E ECE / EEE / Mech",
+    "tags": [
+      "Maths, Physics",
+      "Building machines / Software",
+      "Logical Problem Solving",
+      "Office / Lab / Site",
+      "Build Technology & Infra",
+      "Coding, Robotics, Maths Puzzles",
+      "High Salary + Stable Job",
+      "Machines & Computers",
+      "Maths + Computer/Bio",
+      "Engineer / IT Professional"
+    ],
+    "icon": "⚙️"
+  },
+  {
+    "course": "B.Pharm / Nursing / Allied Health",
+    "tags": [
+      "Biology, Chemistry",
+      "Helping people get healthy",
+      "Memorizing & Caring",
+      "Hospital / Clinic / Lab",
+      "Save Lives & Health",
+      "Biology videos, First Aid",
+      "Respect + Service Mind",
+      "People & Patients",
+      "Pure Biology / Bio-Maths",
+      "Doctor / Scientist"
+    ],
+    "icon": "💊"
+  },
+  {
+    "course": "B.Des / Visual Communication",
+    "tags": [
+      "History, Languages",
+      "Creative design & Drawing",
+      "Creativity & Visualization",
+      "Studio / Freelance",
+      "Design Beautiful Things",
+      "Sketching, Photoshop, Photos",
+      "Creative Freedom",
+      "Designs & Visuals",
+      "Any Group with Creativity",
+      "Architect / Designer"
+    ],
+    "icon": "🎨"
+  },
+  {
+    "course": "BCA / AI & Data Science",
+    "tags": [
+      "Computer Science, Maths",
+      "Building machines / Software",
+      "Logical Problem Solving",
+      "Office / Lab / Site",
+      "Build Technology & Infra",
+      "Coding, Robotics, Maths Puzzles",
+      "High Salary + Stable Job",
+      "Machines & Computers",
+      "Maths + Computer/Bio",
+      "Engineer / IT Professional"
+    ],
+    "icon": "🤖"
+  },
+  {
+    "course": "B.Sc Maths / Physics / Chemistry",
+    "tags": [
+      "Maths, Physics",
+      "Research & Discovery",
+      "Analysis & Experiments",
+      "Research Lab / Field",
+      "Discover New Knowledge",
+      "Science Projects, Reading",
+      "Deep Knowledge + PhD Path",
+      "Data & Experiments",
+      "Science with Curiosity",
+      "Professor / Researcher"
+    ],
+    "icon": "🔬"
+  }
+]

@@ -1,0 +1,105 @@
+/* About Page CSS - css/about.css - Proper Fields */
+.about-page { display: flex; flex-direction: column; gap: 24px; }
+
+.about-hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #1a3a5f; color: white;
+  padding: 8px 16px; border-radius: 999px;
+  font-size: 12px; font-weight: 800; letter-spacing: 0.12em;
+  width: fit-content;
+}
+.badge-icon { font-size: 14px; color: #ff7a00; }
+
+.about-intro-section { text-align: center; padding: 32px 24px; }
+.about-main-title {
+  font-size: 28px; font-weight: 900; line-height: 1.2;
+  color: #ffffff; margin: 0 0 16px; letter-spacing: -0.02em;
+}
+@media(min-width:768px){ .about-main-title { font-size: 36px; } }
+.about-mission {
+  font-size: 16px; color: #b7cae5; line-height: 1.6;
+  max-width: 800px; margin: 0 auto 12px;
+}
+.about-tamil {
+  font-size: 15px; font-weight: 700; color: #ff7a00;
+  font-family: 'Noto Sans Tamil', sans-serif; margin: 0;
+}
+
+/* Experts Grid */
+.experts-grid { display: grid; gap: 24px; }
+@media(min-width:900px){ .experts-grid { grid-template-columns: 1fr 1fr; } }
+
+.expert-card {
+  background: white; border: 1px solid #eef2f7; border-radius: 20px;
+  overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,.06);
+  transition: .3s;
+}
+.expert-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,.1); }
+
+.expert-image-wrap { position: relative; background: #f8fafc; padding: 24px 24px 0; text-align: center; }
+.expert-img {
+  width: 200px; height: 200px; object-fit: cover; object-position: top;
+  border-radius: 16px; background: white; box-shadow: 0 4px 16px rgba(0,0,0,.1);
+}
+.expert-badge {
+  position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%);
+  white-space: nowrap; padding: 6px 14px; border-radius: 999px;
+  font-size: 11px; font-weight: 800; letter-spacing: 0.02em;
+}
+.founder-badge { background: #1a3a5f; color: white; }
+.psych-badge { background: #ff7a00; color: white; }
+
+.expert-content { padding: 28px 24px 24px; }
+.expert-name { font-size: 22px; font-weight: 900; color: #1a3a5f; margin: 0 0 4px; }
+.expert-role { font-size: 12px; color: #64748b; margin: 0 0 12px; line-height: 1.4; font-weight: 500; }
+.expert-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.tag-expert {
+  font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 999px;
+  background: #f1f5f9; color: #475569; border: 1px solid #e2e8f0;
+}
+.expert-phone {
+  display: inline-flex; background: #1a3a5f; color: white; padding: 8px 16px;
+  border-radius: 999px; font-size: 13px; font-weight: 800; text-decoration: none; margin-bottom: 14px;
+}
+.expert-phone:hover { background: #112a45; }
+.expert-desc { font-size: 13.5px; line-height: 1.7; color: #475569; margin: 0 0 12px; }
+.expert-quote {
+  font-size: 13px; font-style: italic; color: #1a3a5f; font-weight: 600;
+  border-left: 3px solid #ff7a00; padding-left: 12px; background: #fff7ed;
+  padding: 8px 12px; border-radius: 0 8px 8px 0;
+}
+
+/* Pillars */
+.pillars-section { background: linear-gradient(135deg, #f8fafc, #ffffff); }
+.pillars-grid { display: grid; gap: 16px; margin-top: 16px; }
+@media(min-width:800px){ .pillars-grid { grid-template-columns: repeat(3,1fr); } }
+.pillar-card {
+  background: white; border: 1px solid #eef2f7; border-radius: 16px; padding: 20px;
+  text-align: center; transition: .2s;
+}
+.pillar-card:hover { border-color: #ff7a00; }
+.pillar-icon { font-size: 36px; margin-bottom: 12px; }
+.pillar-card h4 { font-size: 15px; font-weight: 800; color: #1a3a5f; margin: 0 0 8px; }
+.pillar-card p { font-size: 12.5px; color: #64748b; line-height: 1.6; margin: 0; }
+
+/* Offices */
+.offices-grid { display: grid; gap: 16px; margin-top: 16px; }
+@media(min-width:800px){ .offices-grid { grid-template-columns: 1fr 1fr; } }
+.office-card-detailed {
+  background: white; border: 1px solid #eef2f7; border-radius: 16px; padding: 20px;
+}
+.office-header { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 12px; }
+.office-icon { font-size: 24px; }
+.office-header h4 { font-size: 14px; font-weight: 800; color: #1a3a5f; margin: 0 0 4px; }
+.office-type { font-size: 11px; color: #64748b; background: #f1f5f9; padding: 2px 8px; border-radius: 999px; }
+.office-status { font-size: 10px; font-weight: 800; padding: 2px 8px; border-radius: 999px; margin-left: 6px; }
+.office-status.open { background: #dcfce7; color: #15803d; border: 1px solid #bbf7d0; }
+.office-address { font-size: 12.5px; color: #475569; line-height: 1.6; margin: 0 0 12px; }
+.office-contact { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 12px; }
+.office-phone { font-weight: 800; color: #1a3a5f; text-decoration: none; font-size: 13px; }
+.office-time { font-size: 11px; color: #64748b; }
+.btn-directions {
+  display: inline-flex; background: #1a3a5f; color: white; padding: 8px 14px;
+  border-radius: 999px; font-size: 12px; font-weight: 700; text-decoration: none;
+}
+.btn-directions:hover { background: #112a45; }

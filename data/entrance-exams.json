@@ -1,0 +1,132 @@
+[
+  {
+    "exam": "JEE Main 2027",
+    "courses": "B.E/B.Tech, B.Arch",
+    "notif": "Nov 2026",
+    "examDate": "Jan & Apr 2027",
+    "result": "Feb & May 2027",
+    "counselling": "June 2027",
+    "site": "https://jeemain.nta.nic.in",
+    "label": "jeemain.nta.nic.in"
+  },
+  {
+    "exam": "JEE Advanced 2027",
+    "courses": "IITs - B.Tech",
+    "notif": "Apr 2027",
+    "examDate": "May 2027",
+    "result": "June 2027",
+    "counselling": "June 2027",
+    "site": "https://jeeadv.ac.in",
+    "label": "jeeadv.ac.in"
+  },
+  {
+    "exam": "NEET 2027",
+    "courses": "MBBS, BDS, AYUSH",
+    "notif": "Feb 2027",
+    "examDate": "May 2027",
+    "result": "June 2027",
+    "counselling": "July 2027",
+    "site": "https://neet.nta.nic.in",
+    "label": "neet.nta.nic.in"
+  },
+  {
+    "exam": "VITEEE 2027",
+    "courses": "B.Tech - VIT",
+    "notif": "Nov 2026",
+    "examDate": "Apr 2027",
+    "result": "May 2027",
+    "counselling": "May 2027",
+    "site": "https://viteee.vit.ac.in",
+    "label": "viteee.vit.ac.in"
+  },
+  {
+    "exam": "AEEE 2027",
+    "courses": "B.Tech - Amrita",
+    "notif": "Nov 2026",
+    "examDate": "Jan & Apr 2027",
+    "result": "May 2027",
+    "counselling": "May 2027",
+    "site": "https://aeee.amrita.edu",
+    "label": "aeee.amrita.edu"
+  },
+  {
+    "exam": "SNUCEE 2027",
+    "courses": "B.Tech - Shiv Nadar",
+    "notif": "Dec 2026",
+    "examDate": "Apr 2027",
+    "result": "May 2027",
+    "counselling": "June 2027",
+    "site": "https://snu.edu.in",
+    "label": "snu.edu.in"
+  },
+  {
+    "exam": "SRMJEEE 2027",
+    "courses": "B.Tech - SRM",
+    "notif": "Nov 2026",
+    "examDate": "Apr 2027",
+    "result": "May 2027",
+    "counselling": "June 2027",
+    "site": "https://www.srmist.edu.in",
+    "label": "srmist.edu.in"
+  },
+  {
+    "exam": "TNEA 2027",
+    "courses": "B.E/B.Tech - Tamil Nadu",
+    "notif": "May 2027",
+    "examDate": "No Exam - Merit",
+    "result": "July 2027",
+    "counselling": "July-Aug 2027",
+    "site": "https://www.tneaonline.org",
+    "label": "tneaonline.org"
+  },
+  {
+    "exam": "TNGASA 2027",
+    "courses": "B.A, B.Sc, B.Com - Arts & Science",
+    "notif": "May 2027",
+    "examDate": "No Exam - Merit",
+    "result": "June 2027",
+    "counselling": "June-July 2027",
+    "site": "https://www.tngasa.in",
+    "label": "tngasa.in"
+  },
+  {
+    "exam": "TNAU 2027",
+    "courses": "B.Sc Agriculture & Allied",
+    "notif": "May 2027",
+    "examDate": "No Exam - Merit",
+    "result": "July 2027",
+    "counselling": "July 2027",
+    "site": "https://tnau.ac.in",
+    "label": "tnau.ac.in"
+  },
+  {
+    "exam": "TANUVAS 2027",
+    "courses": "BVSc & AH",
+    "notif": "May 2027",
+    "examDate": "No Exam - Merit",
+    "result": "July 2027",
+    "counselling": "Aug 2027",
+    "site": "https://www.tanuvas.ac.in",
+    "label": "tanuvas.ac.in"
+  },
+  {
+    "exam": "TN MBBS/BDS 2027",
+    "courses": "MBBS/BDS Govt & Private",
+    "notif": "June 2027",
+    "examDate": "NEET Based",
+    "result": "July 2027",
+    "counselling": "July-Aug 2027",
+    "site": "https://tnmedicalselection.net",
+    "label": "tnmedicalselection.net"
+  },
+  {
+    "exam": "Allied Health Sciences",
+    "courses": "BPT, BSc Nursing, Pharm",
+    "notif": "June 2027",
+    "examDate": "Merit Based",
+    "result": "July 2027",
+    "counselling": "Aug 2027",
+    "site": "https://tnmedicalselection.net",
+    "label": "tnmedicalselection.net"
+  }
+]

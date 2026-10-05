@@ -1,0 +1,102 @@
+[
+  {
+    "q": "Which subjects do you enjoy most in 12th?",
+    "options": [
+      "Maths, Physics",
+      "Biology, Chemistry",
+      "Computer Science, Maths",
+      "Commerce, Accounts",
+      "History, Languages"
+    ]
+  },
+  {
+    "q": "What type of work excites you?",
+    "options": [
+      "Building machines / Software",
+      "Helping people get healthy",
+      "Creative design & Drawing",
+      "Business & Managing Money",
+      "Research & Discovery"
+    ]
+  },
+  {
+    "q": "Your strength is?",
+    "options": [
+      "Logical Problem Solving",
+      "Memorizing & Caring",
+      "Creativity & Visualization",
+      "Communication & Leadership",
+      "Analysis & Experiments"
+    ]
+  },
+  {
+    "q": "Preferred work environment?",
+    "options": [
+      "Office / Lab / Site",
+      "Hospital / Clinic / Lab",
+      "Studio / Freelance",
+      "Office / Market / Startup",
+      "Research Lab / Field"
+    ]
+  },
+  {
+    "q": "How do you want to impact society?",
+    "options": [
+      "Build Technology & Infra",
+      "Save Lives & Health",
+      "Design Beautiful Things",
+      "Grow Economy & Jobs",
+      "Discover New Knowledge"
+    ]
+  },
+  {
+    "q": "Your favourite activities?",
+    "options": [
+      "Coding, Robotics, Maths Puzzles",
+      "Biology videos, First Aid",
+      "Sketching, Photoshop, Photos",
+      "Debate, Money, Trading",
+      "Science Projects, Reading"
+    ]
+  },
+  {
+    "q": "Salary vs Passion - Your pick?",
+    "options": [
+      "High Salary + Stable Job",
+      "Respect + Service Mind",
+      "Creative Freedom",
+      "Business Growth + Wealth",
+      "Deep Knowledge + PhD Path"
+    ]
+  },
+  {
+    "q": "Do you like working with?",
+    "options": [
+      "Machines & Computers",
+      "People & Patients",
+      "Designs & Visuals",
+      "Money & People",
+      "Data & Experiments"
+    ]
+  },
+  {
+    "q": "Your 12th Group?",
+    "options": [
+      "Maths + Computer/Bio",
+      "Pure Biology / Bio-Maths",
+      "Any Group with Creativity",
+      "Commerce / Computer Commerce",
+      "Science with Curiosity"
+    ]
+  },
+  {
+    "q": "Long term goal?",
+    "options": [
+      "Engineer / IT Professional",
+      "Doctor / Scientist",
+      "Architect / Designer",
+      "Entrepreneur / CA / Manager",
+      "Professor / Researcher"
+    ]
+  }
+]
