@@ -28,7 +28,7 @@ button{font-family:inherit}
   min-height:60vh;
 }
 .section{
-  background:#1a3a5f;border:1px solid var(--border);
+  background:white;border:1px solid var(--border);
   border-radius:20px;padding:24px;
   box-shadow:0 8px 30px rgba(0,0,0,.04);
   margin-bottom:24px;
