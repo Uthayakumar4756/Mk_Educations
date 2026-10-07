@@ -1,150 +1,399 @@
 // main.js - Main Application Controller
+
 let activeSection = "about";
 let navLinks = [];
+let navigationInitialized = false;
 
 // Navigation Initialization
 async function initNavigation() {
+
+  if (navigationInitialized) {
+    return;
+  }
+
+  navigationInitialized = true;
+
   navLinks = await DataLoader.getNav();
+
   renderNavigation();
-  
+
   // Bind hamburger
-  const hamburger = document.getElementById('hamburgerBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
-  hamburger?.addEventListener('click', () => {
-    mobileMenu?.classList.toggle('open');
+  const hamburger =
+    document.getElementById("hamburgerBtn");
+
+  const mobileMenu =
+    document.getElementById("mobileMenu");
+
+  hamburger?.addEventListener("click", () => {
+    mobileMenu?.classList.toggle("open");
   });
 
   // Check hash
-  const hash = location.hash.replace('#', '');
-  if (hash && navLinks.some(n => n.id === hash)) {
+  const hash =
+    location.hash.replace("#", "");
+
+  if (
+    hash &&
+    (
+      navLinks.some(n => n.id === hash) ||
+      hash === "login"
+    )
+  ) {
     activeSection = hash;
   }
-  
+
   // Load initial section
-  goToSection(activeSection);
+  await goToSection(activeSection);
 }
 
+
+// Render Navigation
 function renderNavigation() {
-  const desktop = document.getElementById('navDesktop');
-  const mobile = document.getElementById('navMobile');
-  if (!desktop || !mobile) return;
+
+  const desktop =
+    document.getElementById("navDesktop");
+
+  const mobile =
+    document.getElementById("navMobile");
+
+  if (!desktop || !mobile) {
+    return;
+  }
 
   desktop.innerHTML = "";
   mobile.innerHTML = "";
 
   navLinks.forEach(link => {
-    const btn = document.createElement('button');
-    btn.className = `nav-btn ${activeSection === link.id ? 'active' : ''}`;
-    btn.textContent = link.label;
-    btn.onclick = () => goToSection(link.id);
+
+    const btn =
+      document.createElement("button");
+
+    btn.className =
+      `nav-btn ${
+        activeSection === link.id
+          ? "active"
+          : ""
+      }`;
+
+    btn.textContent =
+      link.label;
+
+    btn.onclick = () => {
+      goToSection(link.id);
+    };
+
     desktop.appendChild(btn);
 
-    const btnM = document.createElement('button');
-    btnM.className = `nav-btn ${activeSection === link.id ? 'active' : ''}`;
-    btnM.textContent = link.label;
-    btnM.onclick = () => { goToSection(link.id); document.getElementById('mobileMenu')?.classList.remove('open'); };
+
+    const btnM =
+      document.createElement("button");
+
+    btnM.className =
+      `nav-btn ${
+        activeSection === link.id
+          ? "active"
+          : ""
+      }`;
+
+    btnM.textContent =
+      link.label;
+
+    btnM.onclick = () => {
+
+      goToSection(link.id);
+
+      document
+        .getElementById("mobileMenu")
+        ?.classList.remove("open");
+
+    };
+
     mobile.appendChild(btnM);
+
   });
+
 }
 
+
+// Section Navigation
 async function goToSection(id) {
+
   activeSection = id;
+
   renderNavigation();
-  
-  // Hide all section containers
-  document.querySelectorAll('[id$="SectionContainer"]').forEach(el => el.classList.add('hidden'));
-  
-  // Show active
+
+
+  // Hide all sections
+  document
+    .querySelectorAll(
+      '[id$="SectionContainer"], #loginContainer'
+    )
+    .forEach(el => {
+      el.classList.add("hidden");
+    });
+
+
+  // Section mapping
   const activeMap = {
-    'about': 'aboutSectionContainer',
-    'tnea': 'tneaSectionContainer',
-    'entrance': 'entranceSectionContainer',
-    'scholarships': 'scholarshipsSectionContainer',
-    'quiz': 'quizSectionContainer',
-    'predictor': 'predictorSectionContainer',
-    'counselling': 'counsellingSectionContainer'
+
+    about:
+      "aboutSectionContainer",
+
+    tnea:
+      "tneaSectionContainer",
+
+    entrance:
+      "entranceSectionContainer",
+
+    scholarships:
+      "scholarshipsSectionContainer",
+
+    quiz:
+      "quizSectionContainer",
+
+    predictor:
+      "predictorSectionContainer",
+
+    counselling:
+      "counsellingSectionContainer",
+
+    login:
+      "loginContainer"
+
   };
 
-  const targetId = activeMap[id];
-  const target = document.getElementById(targetId);
+
+  const targetId =
+    activeMap[id];
+
+  const target =
+    document.getElementById(targetId);
+
+
   if (target) {
-    target.classList.remove('hidden');
-    // Load section if not loaded
-    if (target.innerHTML.trim() === "") {
+
+    target.classList.remove("hidden");
+
+
+    // Load section content
+    if (
+      id !== "login" &&
+      target.innerHTML.trim() === ""
+    ) {
+
       await loadSection(id);
+
     }
-  } else if (id === 'about') {
-    // About is special - load immediately
-    await loadSection('about');
-    document.getElementById('aboutSectionContainer')?.classList.remove('hidden');
+
   }
 
-  history.replaceState(null, "", `#${id}`);
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // Initialize Login
+  if (id === "login") {
+
+    if (window.initLogin) {
+
+      window.initLogin();
+
+    }
+
+  }
+
+
+  // Update URL hash
+  history.replaceState(
+    null,
+    "",
+    `#${id}`
+  );
+
+
+  // Scroll top
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
 }
 
+
+// Load Section
 async function loadSection(id) {
-  switch(id) {
-    case 'about':
-      const aboutContainer = document.getElementById('aboutSectionContainer');
+
+  switch (id) {
+
+    case "about": {
+
+      const aboutContainer =
+        document.getElementById(
+          "aboutSectionContainer"
+        );
+
       if (aboutContainer) {
-        const res = await fetch('components/sections/about.html');
-        aboutContainer.innerHTML = await res.text();
-        // Bind about buttons
-        aboutContainer.querySelectorAll('[data-go]').forEach(btn => {
-          btn.addEventListener('click', () => goToSection(btn.dataset.go));
-        });
+
+        const res =
+          await fetch(
+            "components/sections/about.html"
+          );
+
+        if (!res.ok) {
+          throw new Error(
+            "Failed to load about.html"
+          );
+        }
+
+        aboutContainer.innerHTML =
+          await res.text();
+
+
+        // About buttons
+        aboutContainer
+          .querySelectorAll("[data-go]")
+          .forEach(btn => {
+
+            btn.addEventListener(
+              "click",
+              () => {
+
+                goToSection(
+                  btn.dataset.go
+                );
+
+              }
+            );
+
+          });
+
       }
+
       break;
-    case 'tnea':
-      if (window.initTNEA) await window.initTNEA();
-      break;
-    case 'entrance':
-      if (window.initEntrance) await window.initEntrance();
-      break;
-    case 'scholarships':
-      if (window.initScholarships) await window.initScholarships();
-      break;
-    case 'quiz':
-      if (window.initQuiz) await window.initQuiz();
-      break;
-    case 'predictor':
-      if (window.initPredictor) await window.initPredictor();
-      break;
-    case 'counselling':
-      const counsContainer = document.getElementById('counsellingSectionContainer');
-      if (counsContainer && counsContainer.innerHTML.trim() === "") {
-        const res = await fetch('components/sections/counselling.html');
-        counsContainer.innerHTML = await res.text();
+
+    }
+
+
+    case "tnea":
+
+      if (window.initTNEA) {
+        await window.initTNEA();
       }
+
       break;
+
+
+    case "entrance":
+
+      if (window.initEntrance) {
+        await window.initEntrance();
+      }
+
+      break;
+
+
+    case "scholarships":
+
+      if (window.initScholarships) {
+        await window.initScholarships();
+      }
+
+      break;
+
+
+    case "quiz":
+
+      if (window.initQuiz) {
+        await window.initQuiz();
+      }
+
+      break;
+
+
+    case "predictor":
+
+      if (window.initPredictor) {
+        await window.initPredictor();
+      }
+
+      break;
+
+
+    case "counselling": {
+
+      const counsContainer =
+        document.getElementById(
+          "counsellingSectionContainer"
+        );
+
+      if (
+        counsContainer &&
+        counsContainer.innerHTML.trim() === ""
+      ) {
+
+        const res =
+          await fetch(
+            "components/sections/counselling.html"
+          );
+
+        if (!res.ok) {
+          throw new Error(
+            "Failed to load counselling.html"
+          );
+        }
+
+        counsContainer.innerHTML =
+          await res.text();
+
+      }
+
+      break;
+
+    }
+
   }
+
 }
+
 
 // Expose globally
-window.initNavigation = initNavigation;
-window.goToSection = goToSection;
+window.initNavigation =
+  initNavigation;
 
-// Initial load after components are loaded
-document.addEventListener('DOMContentLoaded', async () => {
-  // Wait a bit for components.js to load header/footer
-  setTimeout(async () => {
-    if (navLinks.length === 0) {
-      await initNavigation();
+window.goToSection =
+  goToSection;
+
+
+// Footer / Dynamic Navigation
+document.addEventListener(
+  "click",
+  (e) => {
+
+    const navTarget =
+      e.target.closest("[data-nav]");
+
+    if (navTarget) {
+
+      e.preventDefault();
+
+      goToSection(
+        navTarget.dataset.nav
+      );
+
+      return;
+
     }
-    // Preload about
-    await loadSection('about');
-    document.getElementById('aboutSectionContainer')?.classList.remove('hidden');
-  }, 500);
-});
 
-// Footer nav clicks
-document.addEventListener('click', (e) => {
-  if (e.target.matches('[data-nav]')) {
-    e.preventDefault();
-    goToSection(e.target.dataset.nav);
+
+    const goTarget =
+      e.target.closest("[data-go]");
+
+    if (goTarget) {
+
+      e.preventDefault();
+
+      goToSection(
+        goTarget.dataset.go
+      );
+
+    }
+
   }
-  if (e.target.matches('[data-go]')) {
-    goToSection(e.target.dataset.go);
-  }
-});
+);

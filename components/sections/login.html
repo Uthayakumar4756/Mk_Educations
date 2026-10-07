@@ -1,0 +1,116 @@
+<!-- Login Component -->
+
+<section class="login-section" id="login-section">
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <div class="login-header">
+
+                <div class="login-logo">
+                    MK
+                </div>
+
+                <h2>Admin Login</h2>
+
+                <p>
+                    Login to MK Career Guidance Admin Panel
+                </p>
+
+            </div>
+
+
+            <form id="loginForm">
+
+                <div class="form-group">
+
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        placeholder="Enter username"
+                        autocomplete="username"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="password-wrapper">
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter password"
+                            autocomplete="current-password"
+                            required
+                        >
+
+                        <button
+                            type="button"
+                            id="togglePassword"
+                            class="toggle-password"
+                        >
+                            Show
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="loginError"
+                    class="login-error"
+                    style="display: none;"
+                >
+                </div>
+
+
+                <button
+                    type="submit"
+                    id="loginButton"
+                    class="login-button"
+                >
+
+                    <span id="loginText">
+                        Login
+                    </span>
+
+                    <span
+                        id="loginLoader"
+                        style="display: none;"
+                    >
+                        Logging in...
+                    </span>
+
+                </button>
+
+            </form>
+
+
+            <div class="login-footer">
+
+                <span>
+                    MK Career Guidance
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

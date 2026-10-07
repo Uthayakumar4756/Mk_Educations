@@ -1,29 +1,128 @@
-// components.js - Loads header, footer, topbar from separate HTML files
+// components.js
+
 async function loadComponent(url, targetId) {
-  try {
-    const res = await fetch(url);
-    const html = await res.text();
-    const target = document.getElementById(targetId);
-    if (target) target.innerHTML = html;
-  } catch (e) {
-    console.error(`Failed to load ${url}`, e);
-  }
+
+    try {
+
+        const res = await fetch(url);
+
+        if (!res.ok) {
+
+            throw new Error(
+                `Failed to load ${url}: ${res.status}`
+            );
+
+        }
+
+        const html =
+            await res.text();
+
+        const target =
+            document.getElementById(targetId);
+
+        if (target) {
+
+            target.innerHTML = html;
+
+        } else {
+
+            console.error(
+                `Target element #${targetId} not found`
+            );
+
+        }
+
+    } catch (e) {
+
+        console.error(
+            `Failed to load ${url}`,
+            e
+        );
+
+    }
+
 }
+
 
 async function loadAllComponents() {
-  await Promise.all([
-    loadComponent('components/topbar.html', 'topbarContainer'),
-    loadComponent('components/header.html', 'headerContainer'),
-    loadComponent('components/footer.html', 'footerContainer')
-  ]);
 
-  // After header loaded, init navigation
-  if (window.initNavigation) window.initNavigation();
-  
-  // Set footer year
-  const yearEl = document.getElementById('footerYear');
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
+    await Promise.all([
+
+        loadComponent(
+            'components/topbar.html',
+            'topbarContainer'
+        ),
+
+        loadComponent(
+            'components/header.html',
+            'headerContainer'
+        ),
+
+        loadComponent(
+            'components/footer.html',
+            'footerContainer'
+        ),
+
+        loadComponent(
+            'components/sections/login.html',
+            'loginContainer'
+        )
+
+    ]);
+
+
+    if (window.initNavigation) {
+
+        window.initNavigation();
+
+    }
+
+
+    const loginBtn =
+        document.getElementById('loginBtn');
+
+    if (loginBtn) {
+
+        loginBtn.addEventListener(
+            'click',
+            function () {
+
+                console.log(
+                    'Login button clicked'
+                );
+
+                if (window.goToSection) {
+
+                    window.goToSection('login');
+
+                } else {
+
+                    console.error(
+                        'goToSection function not found'
+                    );
+
+                }
+
+            }
+        );
+
+    }
+
+
+    const yearEl =
+        document.getElementById('footerYear');
+
+    if (yearEl) {
+
+        yearEl.textContent =
+            new Date().getFullYear();
+
+    }
+
 }
 
-// Load on DOM ready
-document.addEventListener('DOMContentLoaded', loadAllComponents);
+
+document.addEventListener(
+    'DOMContentLoaded',
+    loadAllComponents
+);
